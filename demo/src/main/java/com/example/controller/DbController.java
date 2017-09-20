@@ -16,4 +16,10 @@ public class DbController {
 	public @ResponseBody String root_test() throws Exception {
 		return "Hello World";
 	}
+	
+	@RequestMapping("/now")
+	public @ResponseBody String now() throws Exception {
+		System.out.println(dbService.getDual());
+		return dbService.getDual();
+	}
 }

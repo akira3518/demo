@@ -1,5 +1,7 @@
 package com.example.dao;
 
-public class DbMapper {
+public interface DbMapper {
+
+	public String getDual() throws Exception;
 
 }
